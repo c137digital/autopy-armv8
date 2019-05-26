@@ -103,6 +103,9 @@ def main():
             RustExtension('autopy.mouse', 'Cargo.toml', binding=Binding.PyO3),
             RustExtension('autopy.screen', 'Cargo.toml', binding=Binding.PyO3),
         ],
+        install_requires=[
+            'setuptools-rust',
+        ],
         packages=['autopy'],
         zip_safe=False,  # Rust extensions are not zip safe, like C-extensions.
     )
