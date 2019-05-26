@@ -9,7 +9,8 @@ crate-type = ["cdylib"]
 name = "autopy"
 
 [dependencies.autopilot]
-version = "0.2.0"
+version = "0.2.1"
+git = "https://github.com/c137digital/autopilot-rs-armv8"
 
 [dependencies.pyo3]
 version = "0.6.0"
